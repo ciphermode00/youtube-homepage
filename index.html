@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="leftnav">
+        <div id="leftnav">
             <i class="fas fa-bars"></i>
             <i class="fab fa-youtube"></i>
             <p>YouTube</p>
@@ -22,7 +22,7 @@
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
 
-        <div class="rightnav">
+        <div id="rightnav">
             <i class="fas fa-video"></i>
             <i class="fas fa-th"></i>
             <i class="fas fa-ellipsis-v"></i>
@@ -39,28 +39,127 @@
                 <p>10,141,157 views</p>
 
                 <ul>
-                    <li class="stats">
-                        <i class="fas fa-thumbs-up"></i>
-                        <p>120K</p>
-                    </li>
-                    <li class="stats">
-                        <i class="fas fa-thumbs-down"></i>
-                        <p>5.9K</p>
-                    </li>
-                    <li class="stats">
-                        <i class="fas fa-share"></i>
-                        <p>SHARE</p>
-                    </li>
-                    <li class="stats">
-                        <i class="fas fa-plus"></i>
-                        <p>SAVE</p>
-                    </li>
-                    <li class="stats">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </li>
+                    <li><i class="fas fa-thumbs-up"></i> <p>120K</p></li>
+                    <li><i class="fas fa-thumbs-down"></i> <p>5.9K</p></li>
+                    <li><i class="fas fa-share"></i> <p>SHARE</p></li>
+                    <li><i class="fas fa-plus"></i> <p>SAVE</p></li>
+                    <li><i class="fas fa-ellipsis-h"></i></li>
                 </ul>
             </div>
+
+            <div id="channel">
+                <div class="description">
+                    <div class="user">
+                        <img src="imgs/avatar.png" alt="user">
+                        <p class="channelId">NCS Music <i class="fas fa-check-circle"></i>
+                            <br><span>1.67M subscribers</span></p>
+                    </div>
+                    <div class="sub">
+                        <button>SUBSCRIBED</button>
+                    </div>
+                </div>
+                <p id="description">Best of NCS | The Best of All Time
+                    Track list:<br>
+                    01. 0:00 Alan Walker - Fade<br>
+                    02. 4:20 Alan Walker - Spectre<br>
+                    ...</p>
+                <p id="show">SHOW MORE</p>
+            </div>
         </main>
+        
+        <aside>
+            <div class="sidebar">
+                <h2>Up next</h2>
+            </div>
+            
+            <section class="playlist">
+                <div class="playlistVideo">
+                    <img src="imgs/vid1.png" alt="video 1">
+                    <div class="playlist-title">
+                        <h2 class="title">Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs</h2>
+                        <p class="channelTitle">Music Store <i class="fas fa-check-circle"></i><br><span
+                                class="view">15M views
+                                views</span> &#8226; 1 year
+                            ago</p>
+                    </div>
+                </div>
+                <div class="playlistVideo">
+                    <img src="imgs/vid2.png" alt="video 2">
+                    <div>
+                        <h2 class="title">NEFFEX Full Album 2020</h2>
+                        <p class="channelTitle">NEFFEX <i class="fas fa-check-circle"></i><br><span class="view">92K
+                            views</span> &#8226; 1 months ago</p>
+                    </div>
+                </div>
+                <div class="playlistVideo">
+                    <img src="imgs/vid3.png" alt="video 3">
+                    <div>
+                        <h2 class="title">Top 20 songs of TheFatRat 2020 - TheFatRat Mega Mix</h2>
+                        <p class="channelTitle">TheFatRat <i class="fas fa-check-circle"></i><br><span class="view">79K
+                            views</span> &#8226; 3 months ago</p>
+                    </div>
+                </div>
+                <div class="playlistVideo">
+                    <img src="imgs/vid4.png" alt="video 4">
+                    <div>
+                        <h2 class="title">Nikson - Where I'll Be (Alan Walker Style)</h2>
+                        <p class="channelTitle">Nikson <i class="fas fa-check-circle"></i><br><span
+                                class="view">229K
+                                views</span> &#8226; 8 months ago</p>
+                    </div>
+                </div>
+                <div class="playlistVideo">
+                    <img src="imgs/vid5.png" alt="video 5">
+                    <div>
+                        <h2 class="title">BRITT LARI & R3LIC STUDY MUSIC 📚 - Our World Playlist</h2>
+                        <p class="channelTitle">BRITT LARI & R3LIC <i class="fas fa-check-circle"></i><br><span class="view">1.1M
+                                views</span> &#8226; 1 year ago</p>
+                    </div>
+                </div>
+                <div class="playlistVideo">
+                    <img src="imgs/vid6.png" alt="video 6">
+                    <div>
+                        <h2 class="title">Anna Yvette - Red Line (Lyrics)</h2>
+                        <p class="channelTitle">Anna Yvette <i class="fas fa-check-circle"></i><br><span class="view">132K
+                                views</span> &#8226; 2 years ago</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <section class="comment">
+            <div id="commentHeader">
+                <p>17,571 Comments</p>
+                <p id="sortBy"><i class="fas fa-sort-amount-down"></i>
+                    SORT BY</p>
+            </div>
+            <div class="publicComment">
+                <img class="commentImage" src="imgs/avatar2.png" alt="user comment 1">
+                <div class="commentText">
+                    <h3>ciphermode00 <span> 8 months ago</span></h3>
+                    <p>Awesome video! Can't wait for the next project!!</p>
+                    <div class="cta">
+                        <i class="fas fa-thumbs-up"></i>
+                        <p>16K</p>
+                        <i class="fas fa-thumbs-down"></i>
+                        <p>REPLY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="publicComment">
+                <img class="commentImage" src="imgs/avatar3.png" alt="user comment 2">
+                <div class="commentText">
+                    <h3>Aang Airbender <span> 1 year ago</span></h3>
+                    <p>Great mix, appreciate all your efforts!</p>
+                    <div class="cta">
+                        <i class="fas fa-thumbs-up"></i>
+                        <p>2.3K</p>
+                        <i class="fas fa-thumbs-down"></i>
+                        <p>REPLY</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

@@ -18,24 +18,27 @@ body {
     align-items: center;
     width: 100%;
 }
-.leftnav {
+
+#leftnav {
     display: flex;
 }
-.leftnav p {
+
+#leftnav p {
     font-size: 20px;
     font-weight: bold;
     margin-top: 2px;
     letter-spacing: -0.1rem;
 }
 
-.fas, .fab, .far {
+.fas, .fab {
     font-size: 1.1rem;
-    opacity: 0.8;
 }
+
 .fa-bars {
     margin: 0 1rem;
     margin-top: 5px;
 }
+
 .fa-youtube {
     color: red;
     margin-right: 5px;
@@ -55,53 +58,231 @@ body {
     border: 1px solid black;
 
 }
+
 #search button {
     padding: .4rem 2rem;
     border: 1px solid black;
 }
 
-.rightnav {
+#rightnav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: -20px;
 }
-.rightnav i {
+
+#rightnav i {
     margin-right: 1.4rem;
 }
 
-main {
+#main {
     width: 65%;
     float: left;
 }
 
-main .video {
+#main .video {
     width: 100%;
     height: 25rem;
 }
 
-main h1 {
-    font-size: 25px;
+#main h1 {
+    font-size: 20px;
 }
 
 .statBar {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+    border-bottom: 1px solid black;
+    opacity: .8;
 }
+
 .statBar p {
     opacity: .8;
     margin-top: 3px;
 }
 
-.stats {
+ul {
     display: inline-flex;
-    margin-right: 1rem;
+    margin-top: -3px;
 }
-.stats p {
-    margin-left: 8px;
+
+li {
+    display: inline-flex;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+li p {
+    padding-left: 10px;
 }
 
 .fa-thumbs-down {
     transform: scaleX(-1);
+}
+
+#channel {
+    width: 100%;
+    padding: 1.5em 0;
+    border-bottom: 1px solid black;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+}
+
+.user img {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user p {
+    align-self: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user span {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+}
+
+.fa-check-circle {
+    font-size: 11px;
+}
+
+.sub {
+    display: flex;
+}
+
+.sub button {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 15px;
+    border: 0;
+}
+
+.fa-bell {
+    align-self: center;
+}
+
+#description, #show {
+    font-size: 14px;
+    margin-left: 4.4em;
+    line-height: 1.5;
+}
+
+#show {
+    font-weight: bold;
+    opacity: .5;
+    font-size: 12.5px;
+    padding-top: -20px;
+}
+
+.sidebar {
+    width: 30%;
+    float:right;
+    margin-top: -20px;
+    margin-right: 40px;
+    font-size: 13px;
+}
+
+.playlist {
+    display: inline-block;
+    margin-bottom: .5rem;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.playlist h2 p {
+    padding-top: 50px;
+}
+
+.playlist img {
+    width: 200px;
+    height: 100px;
+}
+
+.title, .channelTitle {
+    margin-top: 5px;;
+    line-height: 1.4;
+}
+
+.title {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+
+.channelTitle {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+#commentHeader {
+    display: flex;
+    margin-top: -375px;
+}
+
+#commentHeader i {
+    margin-left: 30px;
+}
+
+#sortBy {
+    font-size:14px;
+    font-weight: bold;
+}
+
+.publicComment {
+    display: flex;
+    padding: 30px 0;
+}
+
+.commentImage {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.commentText {
+    margin-left: 20px;
+}
+
+.commentText h3 {
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 10px;
+    
+}
+
+.commentText span {
+    opacity: .5;
+    font-weight: 400;
+}
+
+.commentText p {
+    font-size: 13px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.commentText .cta i, .commentText .cta p {
+    display: inline-flex;
+    opacity: .5;
+    margin-right: 10px;
+    font-size: 13px;
 }
