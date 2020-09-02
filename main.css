@@ -280,7 +280,7 @@ li p {
     margin-bottom: 10px;
 }
 
-.commentText .cta i, .commentText .cta p {
+.commentText .commentLikes i, .commentText .commentLikes p {
     display: inline-flex;
     opacity: .5;
     margin-right: 10px;
